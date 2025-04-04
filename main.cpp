@@ -1,6 +1,5 @@
-#include <iostream>
-
+#include "gtest/gtest.h"
 int main() {
-	std::cout << "HELLO!" << std::endl;
-	return 0;
+	::testing::InitGoogleTest();
+	return RUN_ALL_TESTS();
 }
