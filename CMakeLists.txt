@@ -19,9 +19,9 @@ enable_testing()
 
 project(redis_lite)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} main.cpp "test_step1.cpp"  "simple_string.cpp" "error.cpp" "RedisInteger.cpp" "BulkString.cpp" "RedisArray.cpp")
 
 target_link_libraries(${PROJECT_NAME} GTest::gtest_main)
 
 include(GoogleTest)
-gtest_discover_tests(${PROJECT_NAME})
+#gtest_discover_tests(${PROJECT_NAME})
